@@ -6,7 +6,6 @@ class CreateAddresses < ActiveRecord::Migration[6.0]
       t.string :street
       t.string :address
       t.string :neighborhood
-      t.string :neighborhood
       t.string :uf
       t.string :ibge
       t.string :gia
