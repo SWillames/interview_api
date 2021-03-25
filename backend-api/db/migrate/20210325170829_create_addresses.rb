@@ -1,8 +1,7 @@
 class CreateAddresses < ActiveRecord::Migration[6.0]
   def change
     create_table :addresses do |t|
-      t.string :zip
-      t.string :code
+      t.string :zip_code
       t.string :street
       t.string :address
       t.string :neighborhood

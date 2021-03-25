@@ -1,10 +1,8 @@
 FactoryBot.define do
   factory :address do
-    zip { "MyString" }
-    code { "MyString" }
+    zip_code { "MyString" }
     street { "MyString" }
     address { "MyString" }
-    neighborhood { "MyString" }
     neighborhood { "MyString" }
     uf { "MyString" }
     ibge { "MyString" }
