@@ -8,7 +8,7 @@ namespace :dev do
       show_spinner("Deleting BD...") {%x(rails db:drop)}
       show_spinner("Creating BD...") {%x(rails db:create)}
       show_spinner("Migrating the BD...") {%x(rails db:migrate)}
-      show_spinner("Registering the customer default...") {%x(rails dev:add_default_user)}
+      show_spinner("Registering the User default...") {%x(rails dev:add_default_user)}
     else
       puts "You are not in the development environment."
     end
