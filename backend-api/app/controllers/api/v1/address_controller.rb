@@ -8,7 +8,7 @@ class Api::V1::AddressController < ApplicationController
   
 
   def search
-    @address = SearchAddress::AddressFinder.new(params[:zip_code])
+    @address = SearchAddress::AddressFinder.new(search_params).call
     create(@address)
   end
 

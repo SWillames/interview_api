@@ -35,6 +35,19 @@ RSpec.describe "Api::V1::Addresses", type: :request do
   describe 'POST #create' do
     context "With Invalid authentication headers" do
       it_behaves_like :deny_without_authorization, :post, "/api/v1/address"
-    end    
+    end
+    
+    context "With valids authentication headers" do
+      before do
+        @user = create(:user)
+        @address = create(:address, zip_code: '77826215', user: @user)
+        post "/api/v1/search" , params: {address: {zip_code: @address.zip_code}}, headers: header_with_authentication(@user)
+      end
+
+      it "returns 200" do
+        expect_status(200)
+      end
+      
+    end
   end
 end
