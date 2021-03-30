@@ -2,9 +2,11 @@
 
 Api em Ruby on Rails criada para a busca de cep. Essa aplicação utiliza o Postgresql como banco de dados, está dockerizada, caso a pessoa que irá instalar não tenha ruby on rails instalado em sua maquina.
 
-Clone o repositório em sua máquina local: `git clone git@github.com:SWillames/interview_api.git`
-Vá ao diretorio backend-api
-
+Clone o repositório em sua máquina local: 
+```bash
+git clone git@github.com:SWillames/interview_api.git
+cd backend-api
+```
 ## Instalação
 **Usando Docker & docker-compose**
 
