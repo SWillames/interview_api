@@ -7,11 +7,15 @@ Vá ao diretorio backend-api
 
 ## Instalação
 **Usando Docker & docker-compose**
+
 Construindo a image do projeto com o comando build:  
-```bash docker-compose build
+```bash 
+docker-compose build
 ```
 Execute a task para criar o usuario default da Api:  
-```bash docker-compose run --rm app bundle exec rails dev:setup```
+```bash 
+docker-compose run --rm app bundle exec rails dev:setup
+```
 
 **Sem Docker** 
 ### Versão Utilizada
@@ -73,5 +77,6 @@ Para buscar todos endereços já salvos de um determinado usuario:
 ```
 ## Rodando os testes
 
-``` bash docker-compose run --rm app bundle exec rspec
+``` bash 
+docker-compose run --rm app bundle exec rspec
 ```
